@@ -1,5 +1,10 @@
 # PLANNING
 
+## STRETCH GOALS:
+
+Add delete functionality \
+Store in localStorage
+
 ## COMPONENT STRUCTURE:
 
 `
@@ -34,6 +39,11 @@ Very simple, just has h1 with title
 pass in setTodoList from App \
 label on top, then input below with "Enter task description" \
 Add task button on bottom. onClick setTodoList [...todoList, todoFormValue]
+
+### IncompleteTodosContainer.js
+
+take in todoList from App
+filter over todoList, displaying a SingleIncompleteTodo for each one where !isCompleted
 
 # Getting Started with Create React App
 
