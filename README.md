@@ -5,15 +5,16 @@
 `
 <App>
 
-<Header/>
+- - <Header/>
 - - <AddNewTaskForm/>
 - - <IncompleteTodosContainer>
-- - - - <SingleIncompleteTodo>   --- as many of these as needed
+- - - - <SingleIncompleteTodo> --- as many of these as needed
 - - <IncompleteTodosContainer/>
 - - <CompletedTodosContainer>
-- - - - <SingleCompletedTodo>    --- as many of these as needed
+- - - - <SingleCompletedTodo> --- as many of these as needed
 - - <CompletedTodosContainer/>
-<App/>`
+    <App/>
+        `
 
 ## COMPONENTS DOCUMENTATION
 
