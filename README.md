@@ -25,6 +25,16 @@
 [todoList, setTodoList] --- get from localStorage if I have time \
 each Todo is an object: {text: string, isCompleted: boolean}
 
+### Header.js
+
+Very simple, just has h1 with title
+
+### AddNewTaskForm.js
+
+pass in setTodoList from App \
+label on top, then input below with "Enter task description" \
+Add task button on bottom. onClick setTodoList [...todoList, todoFormValue]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
