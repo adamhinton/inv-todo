@@ -49,7 +49,7 @@ filter over todoList, displaying a SingleIncompleteTodo for each one where !isCo
 
 takes in todoItem from IncompleteTodosContainer.js
 has empty checkbox and title
-onClick: set item to be complete
+onClick: set item to be complete -- need to figure out how to do this
 
 # Getting Started with Create React App
 
