@@ -12,7 +12,6 @@
 - - <CompletedTodosContainer>
 - - - - <SingleCompletedTodo>    --- as many of these as needed
 - - <CompletedTodosContainer/>
-
 <App/>`
 
 # Getting Started with Create React App
