@@ -21,6 +21,9 @@
 
 #### APP STATE:
 
+[todoList, setTodoList] --- get from localStorage if I have time \
+each Todo is an object: {text: string, isCompleted: boolean}
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
