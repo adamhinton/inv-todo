@@ -1,3 +1,20 @@
+# PLANNING
+
+## COMPONENT STRUCTURE:
+
+`<App>
+
+<Header/>
+- - <AddNewTaskForm/>
+- - <IncompleteTodosContainer>
+- - - - <SingleIncompleteTodo>   --- as many of these as needed
+- - <IncompleteTodosContainer/>
+- - <CompletedTodosContainer>
+- - - - <SingleCompletedTodo>    --- as many of these as needed
+- - <CompletedTodosContainer/>
+
+<App/>`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
