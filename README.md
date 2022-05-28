@@ -2,7 +2,8 @@
 
 ## COMPONENT STRUCTURE:
 
-`<App>
+`
+<App>
 
 <Header/>
 - - <AddNewTaskForm/>
