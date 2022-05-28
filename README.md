@@ -28,7 +28,7 @@ Store in localStorage
 #### APP STATE:
 
 [todoList, setTodoList] --- get from localStorage if I have time \
-each Todo is an object: {text: string, isCompleted: boolean}
+each Todo is an object: {id: number, text: string, isCompleted: boolean}
 
 ### Header.js
 
@@ -42,8 +42,14 @@ Add task button on bottom. onClick setTodoList [...todoList, todoFormValue]
 
 ### IncompleteTodosContainer.js
 
-take in todoList from App
+take in todoList from App \
 filter over todoList, displaying a SingleIncompleteTodo for each one where !isCompleted
+
+### SingleIncompleteTodo.js
+
+takes in todoItem from IncompleteTodosContainer.js
+has empty checkbox and title
+onClick: set item to be complete
 
 # Getting Started with Create React App
 
