@@ -36,7 +36,7 @@ Very simple, just has h1 with title
 
 ### AddNewTaskForm.js
 
-pass in setTodoList from App \
+take in setTodoList from App \
 label on top, then input below with "Enter task description" \
 Add task button on bottom. onClick setTodoList [...todoList, todoFormValue]
 
@@ -50,6 +50,11 @@ filter over todoList, displaying a SingleIncompleteTodo for each one where !isCo
 takes in todoItem from IncompleteTodosContainer.js
 has empty checkbox and title
 onClick: set item to be complete -- need to figure out how to do this
+
+### CompletedTodosContainer.js
+
+take in todoList from App \
+filter over todoList, displaying a SingleCompleteTodo for each one where isCompleted
 
 # Getting Started with Create React App
 
