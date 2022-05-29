@@ -10,7 +10,7 @@ const AddNewTaskForm = (props) => {
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
-      <input placeholder="Enter Task Description..."></input>
+      <StyledInput placeholder="Enter Task Description..."></StyledInput>
       <StyledButton type="submit">+ Add Task</StyledButton>
     </StyledForm>
   );
@@ -20,12 +20,16 @@ export default AddNewTaskForm;
 
 const StyledForm = styled.form`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const StyledLabel = styled.label`
   width: 100%;
+`;
+
+const StyledInput = styled.input`
+  border: none;
 `;
 
 const StyledButton = styled.button`
