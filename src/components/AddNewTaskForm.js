@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const AddNewTaskForm = (props) => {
+  const { setTodoList } = props;
+
   return (
     <StyledForm
       onSubmit={(e) => {
