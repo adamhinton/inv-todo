@@ -11,5 +11,5 @@ const fakeTodoList = [
 ];
 
 test("[1] TodosContainer renders without errors", () => {
-  render(<TodosContainer />);
+  render(<TodosContainer todoList={fakeTodoList} />);
 });
