@@ -10,13 +10,13 @@ Store in localStorage
 `
 <App>
 
-- - <Header/>
-- - <AddNewTaskForm/>
-- - <IncompleteTodosContainer>
-- - - - <SingleIncompleteTodo> --- as many of these as needed
+- - <Header/> header
+- - <AddNewTaskForm/> form
+- - <IncompleteTodosContainer> ul
+- - - - <SingleIncompleteTodo> li --- as many of these as needed
 - - <IncompleteTodosContainer/>
-- - <CompletedTodosContainer>
-- - - - <SingleCompletedTodo> --- as many of these as needed
+- - <CompletedTodosContainer> ul
+- - - - <SingleCompletedTodo> li --- as many of these as needed
 - - <CompletedTodosContainer/>
     <App/>
         `
