@@ -23,6 +23,7 @@ const AddNewTaskForm = (props) => {
         };
 
         setTodoList([...todoList, taskObject]);
+        setTaskDescription("");
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
@@ -32,6 +33,7 @@ const AddNewTaskForm = (props) => {
           setTaskDescription(e.target.value);
         }}
         placeholder="Enter Task Description..."
+        value={taskDescription}
       ></StyledInput>
       <StyledButton type="submit">+ Add Task</StyledButton>
     </StyledForm>
