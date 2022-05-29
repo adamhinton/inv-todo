@@ -10,8 +10,6 @@ import SingleTodoitem from "./SingleTodoItem";
 
 const TodosContainer = (props) => {
   const { setTodoList, todoList, isCompleted } = props;
-  //   console.log("todoList:", todoList);
-  //   console.log("todoList, isCompleted:", todoList, isCompleted);
 
   return (
     <div>
