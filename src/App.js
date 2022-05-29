@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         <Header />
         <StyledMain>
-          <AddNewTaskForm />
+          <AddNewTaskForm setTodoList={setTodoList} />
         </StyledMain>
       </div>
     </div>
