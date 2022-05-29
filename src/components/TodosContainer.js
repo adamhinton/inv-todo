@@ -31,4 +31,5 @@ export default TodosContainer;
 const Styledh2 = styled.h2`
   border-bottom: 1px solid lightgrey;
   padding-bottom: 2%;
+  margin-bottom: 0;
 `;
