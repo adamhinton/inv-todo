@@ -26,10 +26,12 @@ const StyledForm = styled.form`
 
 const StyledLabel = styled.label`
   width: 100%;
+  margin-bottom: 3%;
 `;
 
 const StyledInput = styled.input`
   border: none;
+  margin-left: 5%;
 `;
 
 const StyledButton = styled.button`
