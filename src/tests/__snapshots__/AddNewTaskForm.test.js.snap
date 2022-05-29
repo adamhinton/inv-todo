@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[3] Matches snapshot from 5.29.22 1`] = `
+<form
+  className="sc-bczRLJ jZCVrh"
+  onSubmit={[Function]}
+>
+  <label
+    className="sc-gsnTZi kgPqOe"
+  >
+    Add New Task
+  </label>
+  <input
+    className="sc-dkzDqf fUOzCj"
+    data-testid="add-new-task-input"
+    onChange={[Function]}
+    placeholder="Enter Task Description..."
+    type="text"
+    value=""
+  />
+  <button
+    className="sc-hKMtZM fLGsmg"
+    type="submit"
+  >
+    + Add Task
+  </button>
+</form>
+`;

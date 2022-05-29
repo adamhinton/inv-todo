@@ -17,3 +17,9 @@ test("[2] Label, form field and add task button are visible", () => {
   expect(addNewTaskInput).toBeVisible();
   expect(addNewTaskButton).toBeVisible();
 });
+
+test("[3] Matches snapshot from 5.29.22", () => {
+  const component = renderer.create(<AddNewTaskForm />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
