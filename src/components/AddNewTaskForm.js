@@ -30,7 +30,6 @@ const AddNewTaskForm = (props) => {
         type="text"
         onChange={(e) => {
           setTaskDescription(e.target.value);
-          console.log("taskDescription:", taskDescription);
         }}
         placeholder="Enter Task Description..."
       ></StyledInput>
