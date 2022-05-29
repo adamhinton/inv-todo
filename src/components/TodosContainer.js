@@ -7,7 +7,8 @@
 // delete button should be same
 
 const TodosContainer = (props) => {
-  return <></>;
+  const { setTodoList, todoList, isCompleted } = props;
+  //   console.log("todoList, isCompleted:", todoList, isCompleted);
 };
 
 export default TodosContainer;
