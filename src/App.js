@@ -15,3 +15,12 @@ function App() {
 }
 
 export default App;
+
+// todoList structure:
+// [
+//   {
+//     id: number,
+//     text: string,
+//     isCompleted: boolean,
+//   },
+// ];
