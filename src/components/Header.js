@@ -14,4 +14,5 @@ const StyledHeader = styled.header`
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  margin-left: 5%;
 `;
