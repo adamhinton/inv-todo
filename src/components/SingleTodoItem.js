@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SingleTodoitem = (props) => {
-  const { completed, todoItem } = props;
+  const { completed, todoItem, setTodoList } = props;
   return (
     <StyledListItem>
       <input type="checkbox" checked={completed}></input>
