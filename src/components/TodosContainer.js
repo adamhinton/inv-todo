@@ -22,6 +22,7 @@ const TodosContainer = (props) => {
               completed={isCompleted}
               todoItem={item}
               setTodoList={setTodoList}
+              todoList={todoList}
             />
           ) : null;
         })}

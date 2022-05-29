@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SingleTodoitem = (props) => {
-  const { completed, todoItem, setTodoList } = props;
+  const { completed, todoItem, setTodoList, todoList } = props;
   return (
     <StyledListItem>
       <input type="checkbox" checked={completed}></input>
@@ -19,3 +19,9 @@ const StyledListItem = styled.li`
   align-items: center;
   height: 30px;
 `;
+
+// pass in list item object
+// pass in setTodoList
+// pass in TodoList
+
+const listItemOnClick = (e) => {};
