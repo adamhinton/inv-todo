@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+html {
+  font-size: 100%;
+}
+
 .container {
   display: flex;
   justify-content: center;
