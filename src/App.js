@@ -22,7 +22,7 @@ function App() {
 export default App;
 
 const StyledMain = styled.main`
-  width: 50%;
+  width: 40%;
   border: 3px solid blue;
 `;
 
