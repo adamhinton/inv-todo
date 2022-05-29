@@ -9,7 +9,8 @@ test("[2] Header and Delete All button appear on screen", () => {
   render(<Header />);
 
   const h1 = screen.getByText("Inventora Tasks");
-  const deleteAllButton = screen.getAllByText("Delete All");
+  const deleteAllButton = screen.getByText("Delete All");
 
   expect(h1).toBeVisible();
+  expect(deleteAllButton).toBeVisible();
 });
