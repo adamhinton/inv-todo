@@ -31,10 +31,6 @@ const StyledListItem = styled.li`
   height: 30px;
 `;
 
-// pass in list item object
-// pass in setTodoList
-// pass in TodoList
-
 const listItemCheckboxToggleCompleted = (
   todoItem,
   setTodoList,
