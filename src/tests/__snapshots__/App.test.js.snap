@@ -34,6 +34,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
         </label>
         <input
           className="sc-eCYdqJ bClAhd"
+          data-testid="add-new-task-input"
           onChange={[Function]}
           placeholder="Enter Task Description..."
           type="text"
