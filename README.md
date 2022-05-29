@@ -28,7 +28,7 @@ Store in localStorage
 #### APP STATE:
 
 [todoList, setTodoList] --- get from localStorage if I have time \
-each Todo is an object: {id: number, text: string, isCompleted: boolean}
+each Todo is an object: {id: number, text: string, isCompleted: boolean} --- if todoList is empty, id = 1. If not, add 1 to the highest id in todoList
 
 ### Header.js
 
@@ -55,6 +55,11 @@ onClick: set item to be complete -- need to figure out how to do this
 
 take in todoList from App \
 filter over todoList, displaying a SingleCompleteTodo for each one where isCompleted
+
+### SingleCompletedTodo.js
+
+takes in todoItem from CompletedTodosContainer.js
+has checked checkbox and title
 
 # Getting Started with Create React App
 
