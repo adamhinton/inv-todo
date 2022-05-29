@@ -6,7 +6,7 @@ const AddNewTaskForm = (props) => {
   const { todoList, setTodoList } = props;
   const nextId = todoList.length + 1;
   console.log("nextId:", nextId);
-  const { formValues, setFormValues } = useState({});
+  const [taskDescription, setTaskDescription] = useState("");
   //   {
   //     id: number,
   //     text: string,
@@ -21,7 +21,14 @@ const AddNewTaskForm = (props) => {
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
-      <StyledInput placeholder="Enter Task Description..."></StyledInput>
+      <StyledInput
+        type="text"
+        onChange={(e) => {
+          setTaskDescription(e.target.value);
+          console.log("taskDescription:", taskDescription);
+        }}
+        placeholder="Enter Task Description..."
+      ></StyledInput>
       <StyledButton type="submit">+ Add Task</StyledButton>
     </StyledForm>
   );
