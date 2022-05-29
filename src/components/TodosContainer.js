@@ -6,18 +6,22 @@
 // onClick:  just set completed to !completed. Update state
 // delete button should be same
 
+import SingleTodoitem from "./SingleTodoItem";
+
 const TodosContainer = (props) => {
   const { setTodoList, todoList, isCompleted } = props;
-  console.log("todoList:", todoList);
+  //   console.log("todoList:", todoList);
   //   console.log("todoList, isCompleted:", todoList, isCompleted);
 
-  //   return (
-  //     <div>
-  //       {todoList.filter((item) => {
-  //         console.log("item:", item);
-  //       })}
-  //     </div>
-  //   );
+  return (
+    <div>
+      {todoList.map((item) => {
+        return item.completed === isCompleted ? (
+          <SingleTodoitem completed={isCompleted} todoItem={item} />
+        ) : null;
+      })}
+    </div>
+  );
 };
 
 export default TodosContainer;
