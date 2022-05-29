@@ -3,13 +3,22 @@ import styled from "styled-components";
 
 const AddNewTaskForm = (props) => {
   return (
-    <form>
+    <StyledForm
+      onSubmit={(e) => {
+        e.preventDefault();
+        console.log("blah blah blah");
+      }}
+    >
       <label>Add New Task</label>
       <input placeholder="Enter Task Description..."></input>
-    </form>
+      <button type="submit">Submit</button>
+    </StyledForm>
   );
 };
 
 export default AddNewTaskForm;
 
-const StyledForm = styled.form``;
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
