@@ -3,19 +3,17 @@ import styled from "styled-components";
 const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList } = props;
   return (
-    <StyledListItem>
-      <input
-        type="checkbox"
-        checked={completed}
-        onClick={() => {
-          listItemCheckboxToggleCompleted(
-            todoItem,
-            setTodoList,
-            todoList,
-            completed
-          );
-        }}
-      ></input>
+    <StyledListItem
+      onClick={() => {
+        listItemCheckboxToggleCompleted(
+          todoItem,
+          setTodoList,
+          todoList,
+          completed
+        );
+      }}
+    >
+      <input type="checkbox" checked={completed}></input>
       <h4>{todoItem.text}</h4>
     </StyledListItem>
   );
