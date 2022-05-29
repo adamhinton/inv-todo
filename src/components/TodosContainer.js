@@ -6,4 +6,8 @@
 // onClick:  just set completed to !completed. Update state
 // delete button should be same
 
-const TodosContainer = (props = {});
+const TodosContainer = (props) => {
+  return <></>;
+};
+
+export default TodosContainer;

@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import { useState } from "react";
 import styled from "styled-components";
 import AddNewTaskForm from "./components/AddNewTaskForm";
+import TodosContainer from "./components/TodosContainer";
 
 function App() {
   // later on, add localStorage fxnality and get this from localStorage (or empty array if none)
@@ -13,6 +14,8 @@ function App() {
         <Header />
         <StyledMain>
           <AddNewTaskForm todoList={todoList} setTodoList={setTodoList} />
+          <TodosContainer isCompleted={false} />
+          <TodosContainer isCompleted={true} />
         </StyledMain>
       </div>
     </div>
