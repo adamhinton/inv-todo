@@ -4,9 +4,14 @@ import { useState } from "react";
 
 const AddNewTaskForm = (props) => {
   const { todoList, setTodoList } = props;
+  const nextId = todoList.length + 1;
+  console.log("nextId:", nextId);
   const { formValues, setFormValues } = useState({});
-
-  console.log("setTodoList:", setTodoList);
+  //   {
+  //     id: number,
+  //     text: string,
+  //     isCompleted: boolean,
+  //   },
 
   return (
     <StyledForm
