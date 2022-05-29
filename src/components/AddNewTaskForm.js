@@ -27,6 +27,7 @@ const StyledForm = styled.form`
 const StyledLabel = styled.label`
   width: 100%;
   margin-bottom: 3%;
+  font-weight: bold;
 `;
 
 const StyledInput = styled.input`
@@ -38,4 +39,7 @@ const StyledButton = styled.button`
   border: none;
   background-color: #0d98ba;
   color: white;
+  border-radius: 10px;
+  padding: 2% 3%;
+  font-size: 0.75rem;
 `;
