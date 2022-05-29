@@ -28,12 +28,12 @@ const AddNewTaskForm = (props) => {
     >
       <StyledLabel>Add New Task</StyledLabel>
       <StyledInput
+        value={taskDescription}
         type="text"
         onChange={(e) => {
           setTaskDescription(e.target.value);
         }}
         placeholder="Enter Task Description..."
-        value={taskDescription}
       ></StyledInput>
       <StyledButton type="submit">+ Add Task</StyledButton>
     </StyledForm>
