@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[2] Matches snapshot from 5.29.22 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="container"
+  >
+    <header
+      className="sc-bczRLJ iUswKO"
+    >
+      <h1>
+        Inventora Tasks
+      </h1>
+      <button
+        className="sc-gsnTZi cLPkNS"
+        onClick={[Function]}
+      >
+        Delete All
+      </button>
+    </header>
+    <main
+      className="sc-ftvSup iSETSq"
+    >
+      <form
+        className="sc-dkzDqf kPgjkQ"
+        onSubmit={[Function]}
+      >
+        <label
+          className="sc-hKMtZM cqlqPG"
+        >
+          Add New Task
+        </label>
+        <input
+          className="sc-eCYdqJ bClAhd"
+          onChange={[Function]}
+          placeholder="Enter Task Description..."
+          type="text"
+          value=""
+        />
+        <button
+          className="sc-jSMfEi bTbexz"
+          type="submit"
+        >
+          + Add Task
+        </button>
+      </form>
+      <section>
+        <h2
+          className="sc-iBkjds dAQEMA"
+        >
+          To-Do
+        </h2>
+        <ul />
+      </section>
+      <section>
+        <h2
+          className="sc-iBkjds dAQEMA"
+        >
+          Completed
+        </h2>
+        <ul />
+      </section>
+    </main>
+  </div>
+</div>
+`;
