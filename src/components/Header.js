@@ -15,4 +15,6 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: flex-start;
   margin-left: 5%;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 3%;
 `;
