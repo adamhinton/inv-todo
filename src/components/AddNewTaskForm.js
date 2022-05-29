@@ -20,5 +20,5 @@ export default AddNewTaskForm;
 
 const StyledForm = styled.form`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 `;
