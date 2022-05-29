@@ -1,9 +1,7 @@
 const SingleTodoitem = (props) => {
   const { completed, todoItem } = props;
   console.log("blah blah blah");
-  return (
-    <
-  )
+  return <li></li>;
 };
 
 export default SingleTodoitem;
