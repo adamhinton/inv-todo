@@ -7,6 +7,18 @@ Store in localStorage
 
 ## COMPONENT STRUCTURE:
 
+```
+<App>
+- <Header/>
+- <AddNewTodoForm/>
+- <TodosContainer completed = false >   - for the incomplete Todos
+- - <SingleTodoItem/>                   - as many of these as needed
+- <TodosContainer/>
+- <TodosContainer completed = true >    - for completed Todos
+- - <SingleTodoItem/>                   - as many of these as needed
+- <TodosContainer />
+<App/>
+```
 
 ## COMPONENTS DOCUMENTATION
 
