@@ -14,8 +14,16 @@ function App() {
         <Header />
         <StyledMain>
           <AddNewTaskForm todoList={todoList} setTodoList={setTodoList} />
-          <TodosContainer isCompleted={false} />
-          <TodosContainer isCompleted={true} />
+          <TodosContainer
+            isCompleted={false}
+            todoList={todoList}
+            setTodoList={setTodoList}
+          />
+          <TodosContainer
+            isCompleted={true}
+            todoList={todoList}
+            setTodoList={setTodoList}
+          />
         </StyledMain>
       </div>
     </div>
