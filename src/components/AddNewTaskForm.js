@@ -28,6 +28,7 @@ const AddNewTaskForm = (props) => {
     >
       <StyledLabel>Add New Task</StyledLabel>
       <StyledInput
+        data-testid="add-new-task-input"
         value={taskDescription}
         type="text"
         onChange={(e) => {
