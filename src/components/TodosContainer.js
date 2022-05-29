@@ -12,13 +12,16 @@ const TodosContainer = (props) => {
   const { setTodoList, todoList, isCompleted } = props;
 
   return (
-    <div>
-      {todoList.map((item) => {
-        return item.completed === isCompleted ? (
-          <SingleTodoitem completed={isCompleted} todoItem={item} />
-        ) : null;
-      })}
-    </div>
+    <section>
+      <h2>{isCompleted ? "Completed" : "To-Do"}</h2>
+      <ul>
+        {todoList.map((item) => {
+          return item.completed === isCompleted ? (
+            <SingleTodoitem completed={isCompleted} todoItem={item} />
+          ) : null;
+        })}
+      </ul>
+    </section>
   );
 };
 
