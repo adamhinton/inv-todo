@@ -4,7 +4,13 @@ const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList } = props;
   return (
     <StyledListItem>
-      <input type="checkbox" checked={completed}></input>
+      <input
+        type="checkbox"
+        checked={completed}
+        onClick={() => {
+          listItemCheckboxOnClick(todoItem, setTodoList, todoList, completed);
+        }}
+      ></input>
       <h4>{todoItem.text}</h4>
     </StyledListItem>
   );
@@ -24,4 +30,18 @@ const StyledListItem = styled.li`
 // pass in setTodoList
 // pass in TodoList
 
-const listItemOnClick = (e) => {};
+const listItemCheckboxOnClick = (
+  todoItem,
+  setTodoList,
+  todoList,
+  completed
+) => {
+  let currentTodoList = [...todoList];
+
+  let currentTodo = { ...todoList[todoItem.id - 1] };
+  currentTodo.completed = !completed;
+
+  currentTodoList[todoItem.id - 1] = currentTodo;
+
+  setTodoList(currentTodoList);
+};
