@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import { useState } from "react";
 import styled from "styled-components";
+import AddNewTaskForm from "./components/AddNewTaskForm";
 
 function App() {
   // later on, add localStorage fxnality and get this from localStorage (or empty array if none)
@@ -10,7 +11,9 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <StyledMain>jfdiodfjaifajsi</StyledMain>
+        <StyledMain>
+          <AddNewTaskForm />
+        </StyledMain>
       </div>
     </div>
   );
