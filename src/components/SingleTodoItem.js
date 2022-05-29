@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 const SingleTodoitem = (props) => {
   const { completed, todoItem } = props;
   return (
