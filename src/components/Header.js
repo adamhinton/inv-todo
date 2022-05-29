@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const Header = () => {
+const Header = (props) => {
+  const { setTodolist } = props;
+
   return (
     <StyledHeader>
       <h1>Inventora Tasks</h1>
