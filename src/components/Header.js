@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 const Header = (props) => {
-  const { setTodolist } = props;
+  const { setTodoList } = props;
 
   return (
     <StyledHeader>
       <h1>Inventora Tasks</h1>
-      <StyledDeleteAllButton>Delete All</StyledDeleteAllButton>
+      <StyledDeleteAllButton
+        onClick={() => {
+          console.log("success!");
+          setTodoList([]);
+        }}
+      >
+        Delete All
+      </StyledDeleteAllButton>
     </StyledHeader>
   );
 };
