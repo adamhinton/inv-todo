@@ -5,7 +5,7 @@ const SingleTodoitem = (props) => {
   return (
     <StyledListItem>
       <input type="checkbox" checked={completed}></input>
-      <h3>{todoItem.text}</h3>
+      <h4>{todoItem.text}</h4>
     </StyledListItem>
   );
 };
