@@ -3,9 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const AddNewTaskForm = (props) => {
-  const { setTodoList } = props;
-
-  const
+  const { todoList, setTodoList } = props;
 
   console.log("setTodoList:", setTodoList);
 
