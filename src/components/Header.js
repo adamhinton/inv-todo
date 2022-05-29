@@ -8,7 +8,6 @@ const Header = (props) => {
       <h1>Inventora Tasks</h1>
       <StyledDeleteAllButton
         onClick={() => {
-          console.log("success!");
           setTodoList([]);
         }}
       >
