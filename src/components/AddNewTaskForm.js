@@ -9,9 +9,9 @@ const AddNewTaskForm = (props) => {
         console.log("blah blah blah");
       }}
     >
-      <label>Add New Task</label>
+      <StyledLabel>Add New Task</StyledLabel>
       <input placeholder="Enter Task Description..."></input>
-      <button type="submit">Submit</button>
+      <StyledButton type="submit">+ Add Task</StyledButton>
     </StyledForm>
   );
 };
@@ -21,4 +21,14 @@ export default AddNewTaskForm;
 const StyledForm = styled.form`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+const StyledLabel = styled.label`
+  width: 100%;
+`;
+
+const StyledButton = styled.button`
+  border: none;
+  background-color: #0d98ba;
 `;
