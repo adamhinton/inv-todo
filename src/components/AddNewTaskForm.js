@@ -4,8 +4,6 @@ import { useState } from "react";
 
 const AddNewTaskForm = (props) => {
   const { todoList, setTodoList } = props;
-  const nextId = todoList.length + 1;
-  console.log("nextId:", nextId);
   const [taskDescription, setTaskDescription] = useState("");
   //   {
   //     id: number,
@@ -15,9 +13,17 @@ const AddNewTaskForm = (props) => {
 
   return (
     <StyledForm
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        console.log("blah blah blah");
+        const nextId = todoList.length + 1;
+        const taskObject = {
+          id: nextId,
+          text: taskDescription,
+          completed: false,
+        };
+
+        await setTodoList([...todoList, taskObject]);
+        console.log("todoList:", todoList);
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
