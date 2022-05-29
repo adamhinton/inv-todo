@@ -7,19 +7,6 @@ Store in localStorage
 
 ## COMPONENT STRUCTURE:
 
-`
-<App>
-
-- - <Header/> header
-- - <AddNewTaskForm/> form
-- - <IncompleteTodosContainer> ul
-- - - - <SingleIncompleteTodo> li --- as many of these as needed
-- - <IncompleteTodosContainer/>
-- - <CompletedTodosContainer> ul
-- - - - <SingleCompletedTodo> li --- as many of these as needed
-- - <CompletedTodosContainer/>
-    <App/>
-        `
 
 ## COMPONENTS DOCUMENTATION
 
