@@ -18,7 +18,11 @@ const TodosContainer = (props) => {
       <ul>
         {todoList.map((item) => {
           return item.completed === isCompleted ? (
-            <SingleTodoitem completed={isCompleted} todoItem={item} />
+            <SingleTodoitem
+              completed={isCompleted}
+              todoItem={item}
+              setTodoList={setTodoList}
+            />
           ) : null;
         })}
       </ul>
