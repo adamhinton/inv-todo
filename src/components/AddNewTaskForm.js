@@ -13,7 +13,7 @@ const AddNewTaskForm = (props) => {
 
   return (
     <StyledForm
-      onSubmit={async (e) => {
+      onSubmit={(e) => {
         e.preventDefault();
         const nextId = todoList.length + 1;
         const taskObject = {
@@ -22,8 +22,7 @@ const AddNewTaskForm = (props) => {
           completed: false,
         };
 
-        await setTodoList([...todoList, taskObject]);
-        console.log("todoList:", todoList);
+        setTodoList([...todoList, taskObject]);
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
