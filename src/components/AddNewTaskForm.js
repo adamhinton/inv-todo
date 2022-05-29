@@ -35,4 +35,5 @@ const StyledInput = styled.input`
 const StyledButton = styled.button`
   border: none;
   background-color: #0d98ba;
+  color: white;
 `;
