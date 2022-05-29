@@ -6,6 +6,7 @@
 // onClick:  just set completed to !completed. Update state
 // delete button should be same
 
+import styled from "styled-components";
 import SingleTodoitem from "./SingleTodoItem";
 
 const TodosContainer = (props) => {
@@ -13,7 +14,7 @@ const TodosContainer = (props) => {
 
   return (
     <section>
-      <h2>{isCompleted ? "Completed" : "To-Do"}</h2>
+      <Styledh2>{isCompleted ? "Completed" : "To-Do"}</Styledh2>
       <ul>
         {todoList.map((item) => {
           return item.completed === isCompleted ? (
@@ -26,3 +27,8 @@ const TodosContainer = (props) => {
 };
 
 export default TodosContainer;
+
+const Styledh2 = styled.h2`
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 2%;
+`;
