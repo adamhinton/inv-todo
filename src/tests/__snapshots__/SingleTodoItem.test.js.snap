@@ -2,7 +2,7 @@
 
 exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-papXJ ldOPUf"
+  className="sc-papXJ rHbtb"
 >
   <div
     className="sc-kDDrLX bDdhCI"
@@ -19,7 +19,7 @@ exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] =
     </h4>
   </div>
   <button
-    className="sc-jqUVSM jJtzaF"
+    className="sc-jqUVSM fPRtjH"
     onClick={[Function]}
   >
     Delete
@@ -29,7 +29,7 @@ exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] =
 
 exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-papXJ ldOPUf"
+  className="sc-papXJ rHbtb"
 >
   <div
     className="sc-kDDrLX bDdhCI"
@@ -46,7 +46,7 @@ exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] 
     </h4>
   </div>
   <button
-    className="sc-jqUVSM jJtzaF"
+    className="sc-jqUVSM fPRtjH"
     onClick={[Function]}
   >
     Delete

@@ -16,7 +16,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
         Inventora Tasks
       </h1>
       <button
-        className="sc-dkzDqf bexeyA"
+        className="sc-dkzDqf bipiWq"
         onClick={[Function]}
       >
         Delete All
@@ -43,7 +43,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
           value=""
         />
         <button
-          className="sc-gKXOVf dpfsCR"
+          className="sc-gKXOVf lgwNZV"
           type="submit"
         >
           + Add Task
