@@ -33,8 +33,20 @@ function App() {
 export default App;
 
 const StyledMain = styled.main`
-  width: 40%;
+  width: 900px;
   border: 3px solid blue;
+
+  @media (max-width: 1000px) {
+    width: 70%;
+  }
+
+  @media (max-width: 850px) {
+    width: 90%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 // todoList structure:
