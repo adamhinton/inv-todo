@@ -5,7 +5,7 @@ const Header = (props) => {
 
   return (
     <StyledHeader>
-      <h1>Inventora Tasks</h1>
+      <Styledh1>Inventora Tasks</Styledh1>
       <StyledDeleteAllButton
         onClick={() => {
           setTodoList([]);
@@ -27,9 +27,26 @@ const StyledHeader = styled.header`
   border-bottom: 1px solid lightgrey;
   margin-bottom: 3%;
   align-items: center;
+  max-width: 100%;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
-const Styledh1 = styled.h1``;
+const Styledh1 = styled.h1`
+  margin-right: 300px;
+
+  @media (max-width: 750px) {
+    margin-right: 25%;
+  }
+
+  @media (max-width: 450px) {
+    width: 80%;
+    margin: 0;
+  }
+`;
 
 const StyledDeleteAllButton = styled.button`
   border: none;
@@ -37,7 +54,6 @@ const StyledDeleteAllButton = styled.button`
   width: 150px;
   color: white;
   height: 50%;
-  margin-left: 200px;
   font-size: 1.25rem;
   padding: 15px 30px;
   border-radius: 10px;
