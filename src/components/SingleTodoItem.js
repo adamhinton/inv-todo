@@ -18,7 +18,6 @@ const SingleTodoitem = (props) => {
               completed,
               index
             );
-            console.log("newTodoList:", newTodoList);
             persistTodosToLocalStorage(newTodoList);
           }}
         ></StyledCheckbox>
