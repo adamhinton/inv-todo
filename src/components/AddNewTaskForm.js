@@ -12,9 +12,7 @@ const AddNewTaskForm = (props) => {
       onSubmit={(e) => {
         e.preventDefault();
 
-        const nextId = todoList[todoList.length - 1]?.id + 1 || 1;
         const taskObject = {
-          id: nextId,
           text: taskDescription,
           completed: false,
         };

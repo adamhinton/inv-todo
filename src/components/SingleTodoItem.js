@@ -11,12 +11,15 @@ const SingleTodoitem = (props) => {
           data-testid="todo-checkbox"
           defaultChecked={completed}
           onClick={() => {
-            listItemCheckboxToggleCompleted(
+            const newTodoList = listItemCheckboxToggleCompleted(
               todoItem,
               setTodoList,
               todoList,
-              completed
+              completed,
+              index
             );
+            console.log("newTodoList:", newTodoList);
+            persistTodosToLocalStorage(newTodoList);
           }}
         ></StyledCheckbox>
 
@@ -40,16 +43,19 @@ const listItemCheckboxToggleCompleted = (
   todoItem,
   setTodoList,
   todoList,
-  completed
+  completed,
+  index
 ) => {
   let currentTodoList = [...todoList];
-  let currentTodo = { ...todoList[todoItem.id - 1] };
+  let currentTodo = { ...todoList[index] };
 
   currentTodo.completed = !completed;
-  currentTodoList[todoItem.id - 1] = currentTodo;
+  currentTodoList[index] = currentTodo;
 
   setTodoList(currentTodoList);
   persistTodosToLocalStorage(currentTodoList);
+
+  return currentTodoList;
 };
 
 const deleteSingleListItem = (index, todoList, setTodoList) => {

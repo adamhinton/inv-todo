@@ -11,7 +11,7 @@ const TodosContainer = (props) => {
         {todoList.map((item, index) => {
           return item.completed === isCompleted ? (
             <SingleTodoitem
-              key={item.id}
+              key={index}
               completed={isCompleted}
               todoItem={item}
               setTodoList={setTodoList}
