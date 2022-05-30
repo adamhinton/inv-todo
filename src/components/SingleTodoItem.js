@@ -78,7 +78,7 @@ const StyledButton = styled.button`
   background-color: #0d98ba;
   color: white;
   border-radius: 10px;
-  padding: 2% 3%;
+  padding: 14px 20px;
   font-size: 0.75rem;
   height: 50%;
   display: flex;
