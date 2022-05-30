@@ -2,19 +2,24 @@
 
 exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-eCYdqJ hJzPOU"
+  className="sc-bczRLJ ckNfGH"
 >
-  <input
-    data-testid="todo-checkbox"
-    defaultChecked={true}
-    onClick={[Function]}
-    type="checkbox"
-  />
-  <h4>
-    Fake Todo Name Complete
-  </h4>
+  <div
+    className="sc-dkzDqf kgoWbv"
+  >
+    <input
+      className="sc-hKMtZM bhTEMZ"
+      data-testid="todo-checkbox"
+      defaultChecked={true}
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <h4>
+      Fake Todo Name Complete
+    </h4>
+  </div>
   <button
-    className="sc-hKMtZM fLGsmg"
+    className="sc-gsnTZi jglqPG"
     onClick={[Function]}
   >
     Delete
@@ -24,19 +29,24 @@ exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] =
 
 exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-eCYdqJ hJzPOU"
+  className="sc-bczRLJ ckNfGH"
 >
-  <input
-    data-testid="todo-checkbox"
-    defaultChecked={true}
-    onClick={[Function]}
-    type="checkbox"
-  />
-  <h4>
-    Fake Todo Name Incomplete
-  </h4>
+  <div
+    className="sc-dkzDqf kgoWbv"
+  >
+    <input
+      className="sc-hKMtZM bhTEMZ"
+      data-testid="todo-checkbox"
+      defaultChecked={true}
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <h4>
+      Fake Todo Name Incomplete
+    </h4>
+  </div>
   <button
-    className="sc-hKMtZM fLGsmg"
+    className="sc-gsnTZi jglqPG"
     onClick={[Function]}
   >
     Delete
