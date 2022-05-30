@@ -2,16 +2,16 @@
 
 exports[`[3] Matches snapshot from 5.29.22 1`] = `
 <form
-  className="sc-bczRLJ jZCVrh"
+  className="sc-papXJ iwqZah"
   onSubmit={[Function]}
 >
   <label
-    className="sc-gsnTZi kgPqOe"
+    className="sc-jqUVSM cZbbWV"
   >
     Add New Task
   </label>
   <input
-    className="sc-dkzDqf fUOzCj"
+    className="sc-kDDrLX lprcaI"
     data-testid="add-new-task-input"
     onChange={[Function]}
     placeholder="Enter Task Description..."
@@ -19,7 +19,7 @@ exports[`[3] Matches snapshot from 5.29.22 1`] = `
     value=""
   />
   <button
-    className="sc-hKMtZM fmPZnP"
+    className="sc-iqcoie JCIru"
     type="submit"
   >
     + Add Task
