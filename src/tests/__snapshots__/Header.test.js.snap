@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[3] Matches snapshot from 5.29.22 1`] = `
+<header
+  className="sc-bczRLJ iUswKO"
+>
+  <h1>
+    Inventora Tasks
+  </h1>
+  <button
+    className="sc-gsnTZi cLPkNS"
+    onClick={[Function]}
+  >
+    Delete All
+  </button>
+</header>
+`;
