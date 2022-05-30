@@ -40,24 +40,25 @@ const SingleTodoitem = (props) => {
 export default SingleTodoitem;
 
 const StyledListItem = styled.li`
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 30px;
   justify-content: space-between;
+  list-style-type: none;
+  height: 30px;
 `;
 
 const StyledButton = styled.button`
-  border: none;
-  background-color: #0d98ba;
-  color: white;
-  border-radius: 10px;
-  padding: 14px 20px;
-  font-size: 0.75rem;
-  height: 50%;
   display: flex;
   align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  background-color: #0d98ba;
+  color: white;
+
+  font-size: 0.75rem;
+  height: 50%;
 `;
 
 const StyledTextAndCheckbox = styled.div`
