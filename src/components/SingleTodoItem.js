@@ -12,7 +12,7 @@ const SingleTodoitem = (props) => {
   return (
     <StyledListItem>
       <StyledTextAndCheckbox>
-        <input
+        <StyledCheckbox
           type="checkbox"
           data-testid="todo-checkbox"
           defaultChecked={completed}
@@ -24,7 +24,7 @@ const SingleTodoitem = (props) => {
               completed
             );
           }}
-        ></input>
+        ></StyledCheckbox>
 
         <h4>{todoItem.text}</h4>
       </StyledTextAndCheckbox>
@@ -89,4 +89,8 @@ const StyledTextAndCheckbox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+`;
+
+const StyledCheckbox = styled.input`
+  margin-right: 25px;
 `;
