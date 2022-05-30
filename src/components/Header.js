@@ -52,10 +52,11 @@ const Styledh1 = styled.h1`
 const StyledDeleteAllButton = styled.button`
   border: none;
   padding: 15px 30px;
+  width: 150px;
+  height: 50%;
   border-radius: 10px;
   background-color: #0d98ba;
   color: white;
-  width: 150px;
-  height: 50%;
+
   font-size: 1.25rem;
 `;
