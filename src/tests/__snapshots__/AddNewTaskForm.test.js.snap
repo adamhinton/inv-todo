@@ -11,7 +11,7 @@ exports[`[3] Matches snapshot from 5.29.22 1`] = `
     Add New Task
   </label>
   <input
-    className="sc-kDDrLX lprcaI"
+    className="sc-kDDrLX exruFV"
     data-testid="add-new-task-input"
     onChange={[Function]}
     placeholder="Enter Task Description..."
