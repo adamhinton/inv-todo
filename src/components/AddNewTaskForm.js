@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
+import { persistTodosToLocalStorage } from "../App";
 
 const AddNewTaskForm = (props) => {
   const { todoList, setTodoList } = props;
@@ -18,7 +19,9 @@ const AddNewTaskForm = (props) => {
         };
 
         setTodoList([...todoList, taskObject]);
+        console.log("new todoList:", todoList);
         setTaskDescription("");
+        persistTodosToLocalStorage([...todoList, taskObject]);
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
