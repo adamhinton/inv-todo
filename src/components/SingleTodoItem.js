@@ -11,25 +11,30 @@ import { StyledButton } from "./AddNewTaskForm";
 const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList } = props;
   return (
-    <StyledListItem
-      onClick={() => {
-        listItemCheckboxToggleCompleted(
-          todoItem,
-          setTodoList,
-          todoList,
-          completed
-        );
-      }}
-    >
+    <StyledListItem>
       <input
         type="checkbox"
         data-testid="todo-checkbox"
         defaultChecked={completed}
+        onClick={() => {
+          listItemCheckboxToggleCompleted(
+            todoItem,
+            setTodoList,
+            todoList,
+            completed
+          );
+        }}
       ></input>
 
       <h4>{todoItem.text}</h4>
 
-      <StyledButton>Delete</StyledButton>
+      <StyledButton
+        onClick={() => {
+          console.log("jvdiasofjasdi");
+        }}
+      >
+        Delete
+      </StyledButton>
     </StyledListItem>
   );
 };
