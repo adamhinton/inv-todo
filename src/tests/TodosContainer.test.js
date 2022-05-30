@@ -27,3 +27,11 @@ test("[3] Correct heading appears in TodoContainer isCompleted=true", () => {
   const toDoHeading = screen.getByText("Completed");
   expect(toDoHeading).toBeVisible();
 });
+
+test("[4] TodosContainer isCompleted=true matches snapshot from 5.29.22", () => {
+  const component = renderer.create(
+    <TodosContainer todoList={fakeTodoList} isCompleted={true} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
