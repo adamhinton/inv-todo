@@ -13,7 +13,11 @@ const SingleTodoitem = (props) => {
         );
       }}
     >
-      <input type="checkbox" defaultChecked={completed}></input>
+      <input
+        type="checkbox"
+        data-testid="todo-checkbox"
+        defaultChecked={completed}
+      ></input>
       <h4>{todoItem.text}</h4>
     </StyledListItem>
   );
