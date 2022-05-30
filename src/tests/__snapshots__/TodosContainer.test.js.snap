@@ -10,11 +10,11 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
   <ul>
     <li
       className="sc-eCYdqJ hJzPOU"
-      onClick={[Function]}
     >
       <input
         data-testid="todo-checkbox"
         defaultChecked={true}
+        onClick={[Function]}
         type="checkbox"
       />
       <h4>
@@ -22,6 +22,7 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
       </h4>
       <button
         className="sc-hKMtZM fLGsmg"
+        onClick={[Function]}
       >
         Delete
       </button>
