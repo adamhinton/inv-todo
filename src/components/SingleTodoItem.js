@@ -1,4 +1,8 @@
 // GOAL: Add functionality to delete single item
+// Pass in index in .map to SingleTodoItem
+// Code delete icon (trash icon)
+// Onclick: Takes in todoList, setTodoList, index
+// splice it out of todoList based on index - use checkbox onClick as format
 
 import styled from "styled-components";
 
