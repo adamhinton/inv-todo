@@ -33,15 +33,17 @@ function App() {
 export default App;
 
 const StyledMain = styled.main`
-  width: 40%;
-  border: 3px solid blue;
-`;
+  width: 900px;
 
-// todoList structure:
-// [
-//   {
-//     id: number,
-//     text: string,
-//     isCompleted: boolean,
-//   },
-// ];
+  @media (max-width: 1000px) {
+    width: 70%;
+  }
+
+  @media (max-width: 850px) {
+    width: 90%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+`;

@@ -8,32 +8,34 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
     className="container"
   >
     <header
-      className="sc-bczRLJ iUswKO"
+      className="sc-bczRLJ gSWtie"
     >
-      <h1>
+      <h1
+        className="sc-gsnTZi gWWeNP"
+      >
         Inventora Tasks
       </h1>
       <button
-        className="sc-gsnTZi cLPkNS"
+        className="sc-dkzDqf fokCQY"
         onClick={[Function]}
       >
         Delete All
       </button>
     </header>
     <main
-      className="sc-kDDrLX hdgKhd"
+      className="sc-iqcoie hkmRiF"
     >
       <form
-        className="sc-dkzDqf kPgjkQ"
+        className="sc-hKMtZM fvCfgH"
         onSubmit={[Function]}
       >
         <label
-          className="sc-hKMtZM cqlqPG"
+          className="sc-eCYdqJ kwJpGj"
         >
           Add New Task
         </label>
         <input
-          className="sc-eCYdqJ bClAhd"
+          className="sc-jSMfEi gquAwz"
           data-testid="add-new-task-input"
           onChange={[Function]}
           placeholder="Enter Task Description..."
@@ -41,7 +43,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
           value=""
         />
         <button
-          className="sc-jSMfEi bTbexz"
+          className="sc-gKXOVf dpfsCR"
           type="submit"
         >
           + Add Task
@@ -49,7 +51,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
       </form>
       <section>
         <h2
-          className="sc-jqUVSM bvOxsX"
+          className="sc-kDDrLX kLBLqs"
         >
           To-Do
         </h2>
@@ -57,7 +59,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
       </section>
       <section>
         <h2
-          className="sc-jqUVSM bvOxsX"
+          className="sc-kDDrLX kLBLqs"
         >
           Completed
         </h2>
