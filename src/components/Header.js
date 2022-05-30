@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { persistTodosToLocalStorage } from "../App";
 
 const Header = (props) => {
   const { setTodoList } = props;
@@ -9,6 +10,7 @@ const Header = (props) => {
       <StyledDeleteAllButton
         onClick={() => {
           setTodoList([]);
+          persistTodosToLocalStorage([]);
         }}
       >
         Delete All
@@ -20,14 +22,13 @@ const Header = (props) => {
 export default Header;
 
 const StyledHeader = styled.header`
-  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   margin-left: 5%;
   border-bottom: 1px solid lightgrey;
   margin-bottom: 3%;
-  max-width: 100%;
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -50,11 +51,11 @@ const Styledh1 = styled.h1`
 
 const StyledDeleteAllButton = styled.button`
   border: none;
-  background-color: #0d98ba;
-  width: 150px;
-  color: white;
-  height: 50%;
-  font-size: 1.25rem;
   padding: 15px 30px;
   border-radius: 10px;
+  background-color: #0d98ba;
+  color: white;
+  width: 150px;
+  height: 50%;
+  font-size: 1.25rem;
 `;

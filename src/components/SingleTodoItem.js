@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { persistTodosToLocalStorage } from "../App";
 
 const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList, index } = props;
@@ -10,12 +11,14 @@ const SingleTodoitem = (props) => {
           data-testid="todo-checkbox"
           defaultChecked={completed}
           onClick={() => {
-            listItemCheckboxToggleCompleted(
+            const newTodoList = listItemCheckboxToggleCompleted(
               todoItem,
               setTodoList,
               todoList,
-              completed
+              completed,
+              index
             );
+            persistTodosToLocalStorage(newTodoList);
           }}
         ></StyledCheckbox>
 
@@ -39,22 +42,28 @@ const listItemCheckboxToggleCompleted = (
   todoItem,
   setTodoList,
   todoList,
-  completed
+  completed,
+  index
 ) => {
   let currentTodoList = [...todoList];
+  let currentTodo = { ...todoList[index] };
 
-  let currentTodo = { ...todoList[todoItem.id - 1] };
   currentTodo.completed = !completed;
-
-  currentTodoList[todoItem.id - 1] = currentTodo;
+  currentTodoList[index] = currentTodo;
 
   setTodoList(currentTodoList);
+  persistTodosToLocalStorage(currentTodoList);
+
+  return currentTodoList;
 };
 
 const deleteSingleListItem = (index, todoList, setTodoList) => {
   let currentTodoList = [...todoList];
+
   currentTodoList.splice(index, 1);
+
   setTodoList(currentTodoList);
+  persistTodosToLocalStorage(currentTodoList);
 };
 
 const StyledListItem = styled.li`

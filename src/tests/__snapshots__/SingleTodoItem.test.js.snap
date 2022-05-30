@@ -2,13 +2,13 @@
 
 exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-bczRLJ ckNfGH"
+  className="sc-papXJ ldOPUf"
 >
   <div
-    className="sc-dkzDqf kgoWbv"
+    className="sc-kDDrLX bDdhCI"
   >
     <input
-      className="sc-hKMtZM bhTEMZ"
+      className="sc-iqcoie ESAZI"
       data-testid="todo-checkbox"
       defaultChecked={true}
       onClick={[Function]}
@@ -19,7 +19,7 @@ exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] =
     </h4>
   </div>
   <button
-    className="sc-gsnTZi jglqPG"
+    className="sc-jqUVSM jJtzaF"
     onClick={[Function]}
   >
     Delete
@@ -29,13 +29,13 @@ exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] =
 
 exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-bczRLJ ckNfGH"
+  className="sc-papXJ ldOPUf"
 >
   <div
-    className="sc-dkzDqf kgoWbv"
+    className="sc-kDDrLX bDdhCI"
   >
     <input
-      className="sc-hKMtZM bhTEMZ"
+      className="sc-iqcoie ESAZI"
       data-testid="todo-checkbox"
       defaultChecked={true}
       onClick={[Function]}
@@ -46,7 +46,7 @@ exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] 
     </h4>
   </div>
   <button
-    className="sc-gsnTZi jglqPG"
+    className="sc-jqUVSM jJtzaF"
     onClick={[Function]}
   >
     Delete

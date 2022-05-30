@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
+import { persistTodosToLocalStorage } from "../App";
 
 const AddNewTaskForm = (props) => {
   const { todoList, setTodoList } = props;
@@ -10,15 +11,15 @@ const AddNewTaskForm = (props) => {
     <StyledForm
       onSubmit={(e) => {
         e.preventDefault();
-        const nextId = todoList.length + 1;
+
         const taskObject = {
-          id: nextId,
           text: taskDescription,
           completed: false,
         };
 
-        setTodoList([...todoList, taskObject]);
+        taskDescription.length && setTodoList([...todoList, taskObject]);
         setTaskDescription("");
+        persistTodosToLocalStorage([...todoList, taskObject]);
       }}
     >
       <StyledLabel>Add New Task</StyledLabel>
@@ -53,6 +54,15 @@ const StyledLabel = styled.label`
 const StyledInput = styled.input`
   border: none;
   margin-left: 5%;
+  width: 400px;
+
+  @media (max-width: 650px) {
+    width: 300px;
+  }
+
+  @media (max-width: 450px) {
+    width: 180px;
+  }
 `;
 
 const StyledButton = styled.button`

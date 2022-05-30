@@ -3,19 +3,19 @@
 exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] = `
 <section>
   <h2
-    className="sc-eCYdqJ gQLibB"
+    className="sc-iqcoie irqolB"
   >
     Completed
   </h2>
   <ul>
     <li
-      className="sc-bczRLJ ckNfGH"
+      className="sc-ftvSup dPuacK"
     >
       <div
-        className="sc-dkzDqf kgoWbv"
+        className="sc-jqUVSM bxlMaP"
       >
         <input
-          className="sc-hKMtZM bhTEMZ"
+          className="sc-kDDrLX hLNvhp"
           data-testid="todo-checkbox"
           defaultChecked={true}
           onClick={[Function]}
@@ -26,7 +26,7 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
         </h4>
       </div>
       <button
-        className="sc-gsnTZi jglqPG"
+        className="sc-papXJ dhMqVU"
         onClick={[Function]}
       >
         Delete
@@ -39,7 +39,7 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
 exports[`[5] TodosContainer isCompleted=false matches snapshot from 5.29.22 1`] = `
 <section>
   <h2
-    className="sc-eCYdqJ gQLibB"
+    className="sc-iqcoie irqolB"
   >
     To-Do
   </h2>
