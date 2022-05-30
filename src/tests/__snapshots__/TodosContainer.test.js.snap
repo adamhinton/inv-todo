@@ -13,6 +13,7 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
       onClick={[Function]}
     >
       <input
+        data-testid="todo-checkbox"
         defaultChecked={true}
         type="checkbox"
       />

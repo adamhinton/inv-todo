@@ -23,3 +23,13 @@ test("[1] SingleTodoItem incomplete renders without errors", () => {
 test("[2] SingleTodoItem complete renders without errors", () => {
   render(<SingleTodoitem completed={true} todoItem={fakeTodoItemComplete} />);
 });
+
+test("[3] Todo item text and checkbox appear on screen", () => {
+  render(<SingleTodoitem completed={true} todoItem={fakeTodoItemComplete} />);
+
+  const todoText = screen.getByText("Fake Todo Name Complete");
+  const todoCheckbox = screen.getByTestId("todo-checkbox");
+
+  expect(todoText).toBeVisible();
+  expect(todoCheckbox).toBeVisible();
+});
