@@ -60,7 +60,7 @@ const StyledInput = styled.input`
   margin-left: 5%;
 `;
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   border: none;
   background-color: #0d98ba;
   color: white;
