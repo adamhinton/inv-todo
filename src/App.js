@@ -34,7 +34,6 @@ export default App;
 
 const StyledMain = styled.main`
   width: 900px;
-  border: 3px solid blue;
 
   @media (max-width: 1000px) {
     width: 70%;
