@@ -1,3 +1,7 @@
+# GOAL: 
+Build a Todo app with delete, read and post functionality \
+Check out deployment here: https://inv-todo.vercel.app/
+
 # DOCUMENTATION
 
 ## COMPONENT STRUCTURE:
@@ -20,7 +24,7 @@
 ### STYLED COMPONENTS
 https://styled-components.com/docs/ \ 
 The concept here is very simple. Developers create a component for styling and wrap its CSS in backticks. You put it right in your component file. \
-EXAMPLE: \
+EXAMPLE: 
 ```
 const StyledLabel = styled.label`
   width: 100%;
@@ -34,43 +38,49 @@ const StyledLabel = styled.label`
 ### App.js
 A standard React App component. Houses all other components in the app.
 
-
 #### APP STATE:
 
-[todoList, setTodoList] --- get from localStorage if I have time \
-each Todo is an object: {id: number, text: string, isCompleted: boolean} --- if todoList is empty, id = 1. If not, add 1 to the highest id in todoList
+[todoList, setTodoList]  
 
+each Todo is an object: {id: number, text: string, isCompleted: boolean} --- if todoList is empty, id = 1. If not, add 1 to the highest id in todoList 
+
+uses useEffect to check localStorage for todo list ; if none in localStorage, uses an empty array
+
+#### FUNCTIONALITY
+
+Its main function is to house all other components. It is also the central "brain" of statefulness and hosts a check local storage function to export to other components.
 
 ### Header.js
 
-Very simple, just has h1 with title
+Very simple header. A h1 with "Inventora Todo" and a Delete All button which deletes items from global state and localStorage.
 
 ### AddNewTaskForm.js
 
-take in setTodoList from App \
-label on top, then input below with "Enter task description" \
-Add task button on bottom. onClick setTodoList [...todoList, todoFormValue]
+user inputs new todo text, the form then adds that to global state and localStorage 
 
-### IncompleteTodosContainer.js
+### TodosContainer.js
 
-take in todoList from App \
-filter over todoList, displaying a SingleIncompleteTodo for each one where !isCompleted
+Can either host incomplete or complete todos based on value passed to it 
 
-### SingleIncompleteTodo.js
+Has heading of "To-Do" or "Completed" based on which boolean it's hosting 
 
-takes in todoItem from IncompleteTodosContainer.js
-has empty checkbox and title
-onClick: set item to be complete -- need to figure out how to do this
+Is an unordered list of to-do items 
 
-### CompletedTodosContainer.js
+Appears twice in the app.
 
-take in todoList from App \
-filter over todoList, displaying a SingleCompleteTodo for each one where isCompleted
+In its first appearance, it maps over todo list and displays incomplete todos. 
 
-### SingleCompletedTodo.js
+In second appearance, it maps over todo list and displays completed todos. 
 
-takes in todoItem from CompletedTodosContainer.js
-has checked checkbox and title
+### SingleTodoItem.js
+
+a li that can either display completed todos or incomplete todos 
+
+Has a checkbox, todo text and a delete button 
+
+Checkbox is checked if todo is completed, unchecked if todo is not completed 
+
+Delete button deletes item from page and from localStorage
 
 # Getting Started with Create React App
 
