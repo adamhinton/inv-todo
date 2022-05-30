@@ -29,6 +29,8 @@ const StyledHeader = styled.header`
   align-items: center;
 `;
 
+const Styledh1 = styled.h1``;
+
 const StyledDeleteAllButton = styled.button`
   border: none;
   background-color: #0d98ba;
