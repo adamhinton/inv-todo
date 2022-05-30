@@ -3,6 +3,7 @@ import { persistTodosToLocalStorage } from "../App";
 
 const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList, index } = props;
+
   return (
     <StyledListItem>
       <StyledTextAndCheckbox>
@@ -38,34 +39,6 @@ const SingleTodoitem = (props) => {
 
 export default SingleTodoitem;
 
-const listItemCheckboxToggleCompleted = (
-  todoItem,
-  setTodoList,
-  todoList,
-  completed,
-  index
-) => {
-  let currentTodoList = [...todoList];
-  let currentTodo = { ...todoList[index] };
-
-  currentTodo.completed = !completed;
-  currentTodoList[index] = currentTodo;
-
-  setTodoList(currentTodoList);
-  persistTodosToLocalStorage(currentTodoList);
-
-  return currentTodoList;
-};
-
-const deleteSingleListItem = (index, todoList, setTodoList) => {
-  let currentTodoList = [...todoList];
-
-  currentTodoList.splice(index, 1);
-
-  setTodoList(currentTodoList);
-  persistTodosToLocalStorage(currentTodoList);
-};
-
 const StyledListItem = styled.li`
   list-style-type: none;
   display: flex;
@@ -96,3 +69,31 @@ const StyledTextAndCheckbox = styled.div`
 const StyledCheckbox = styled.input`
   margin-right: 25px;
 `;
+
+const listItemCheckboxToggleCompleted = (
+  todoItem,
+  setTodoList,
+  todoList,
+  completed,
+  index
+) => {
+  let currentTodoList = [...todoList];
+  let currentTodo = { ...todoList[index] };
+
+  currentTodo.completed = !completed;
+  currentTodoList[index] = currentTodo;
+
+  setTodoList(currentTodoList);
+  persistTodosToLocalStorage(currentTodoList);
+
+  return currentTodoList;
+};
+
+const deleteSingleListItem = (index, todoList, setTodoList) => {
+  let currentTodoList = [...todoList];
+
+  currentTodoList.splice(index, 1);
+
+  setTodoList(currentTodoList);
+  persistTodosToLocalStorage(currentTodoList);
+};
