@@ -3,10 +3,19 @@ import { useState } from "react";
 import styled from "styled-components";
 import AddNewTaskForm from "./components/AddNewTaskForm";
 import TodosContainer from "./components/TodosContainer";
+import { useEffect } from "react";
 
 function App() {
   // later on, add localStorage fxnality and get this from localStorage (or empty array if none)
   const [todoList, setTodoList] = useState([]);
+
+  useEffect(() => {
+    const key = "todos";
+
+    const persistedTodos = JSON.parse(window.localStorage.getItem(key)) || [];
+    console.log("persistedTodos:", persistedTodos);
+    setTodoList(persistedTodos);
+  }, []);
 
   return (
     <div className="App">
@@ -47,3 +56,14 @@ const StyledMain = styled.main`
     width: 100%;
   }
 `;
+
+export const persistTodosToLocalStorage = (todoList) => {
+  const key = "todos";
+  window.localStorage.setItem(key, JSON.stringify(todoList));
+  // console.log("todoList:", todoList);
+
+  // console.log(
+  //   'window.localStorage.getItem("todos"):',
+  //   window.localStorage.getItem("todos")
+  // );
+};
