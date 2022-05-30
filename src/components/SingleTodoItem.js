@@ -1,12 +1,3 @@
-// GOAL: Add functionality to delete single item
-// Pass in index in .map to SingleTodoItem
-// Code delete icon (trash icon)
-// Onclick: Takes in todoList, setTodoList, index
-// splice it out of todoList based on index - use checkbox onClick as format
-// Make sure not to update state object directly - need to make new array
-
-// @media (max-width: 768px){}
-
 import styled from "styled-components";
 
 const SingleTodoitem = (props) => {

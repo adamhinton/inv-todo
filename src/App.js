@@ -47,12 +47,3 @@ const StyledMain = styled.main`
     width: 100%;
   }
 `;
-
-// todoList structure:
-// [
-//   {
-//     id: number,
-//     text: string,
-//     isCompleted: boolean,
-//   },
-// ];

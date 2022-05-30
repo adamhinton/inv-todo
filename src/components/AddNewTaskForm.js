@@ -5,11 +5,6 @@ import { useState } from "react";
 const AddNewTaskForm = (props) => {
   const { todoList, setTodoList } = props;
   const [taskDescription, setTaskDescription] = useState("");
-  //   {
-  //     id: number,
-  //     text: string,
-  //     isCompleted: boolean,
-  //   },
 
   return (
     <StyledForm
