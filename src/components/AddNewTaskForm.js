@@ -56,6 +56,15 @@ const StyledLabel = styled.label`
 const StyledInput = styled.input`
   border: none;
   margin-left: 5%;
+  width: 400px;
+
+  @media (max-width: 650px) {
+    width: 300px;
+  }
+
+  @media (max-width: 450px) {
+    width: 180px;
+  }
 `;
 
 const StyledButton = styled.button`
