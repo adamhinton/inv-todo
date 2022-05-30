@@ -6,7 +6,6 @@
 // Make sure not to update state object directly - need to make new array
 
 import styled from "styled-components";
-import { StyledButton } from "./AddNewTaskForm";
 
 const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList, index } = props;
@@ -47,7 +46,6 @@ const StyledListItem = styled.li`
   flex-direction: row;
   align-items: center;
   height: 30px;
-  /* justify-content: space-between; */
 `;
 
 const listItemCheckboxToggleCompleted = (
@@ -71,3 +69,12 @@ const deleteSingleListItem = (index, todoList, setTodoList) => {
   currentTodoList.splice(index, 1);
   setTodoList(currentTodoList);
 };
+
+const StyledButton = styled.button`
+  border: none;
+  background-color: #0d98ba;
+  color: white;
+  border-radius: 10px;
+  padding: 2% 3%;
+  font-size: 0.75rem;
+`;
