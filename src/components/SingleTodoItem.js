@@ -11,21 +11,23 @@ const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList, index } = props;
   return (
     <StyledListItem>
-      <input
-        type="checkbox"
-        data-testid="todo-checkbox"
-        defaultChecked={completed}
-        onClick={() => {
-          listItemCheckboxToggleCompleted(
-            todoItem,
-            setTodoList,
-            todoList,
-            completed
-          );
-        }}
-      ></input>
+      <StyledTextAndCheckbox>
+        <input
+          type="checkbox"
+          data-testid="todo-checkbox"
+          defaultChecked={completed}
+          onClick={() => {
+            listItemCheckboxToggleCompleted(
+              todoItem,
+              setTodoList,
+              todoList,
+              completed
+            );
+          }}
+        ></input>
 
-      <h4>{todoItem.text}</h4>
+        <h4>{todoItem.text}</h4>
+      </StyledTextAndCheckbox>
 
       <StyledButton
         onClick={() => {
@@ -39,14 +41,6 @@ const SingleTodoitem = (props) => {
 };
 
 export default SingleTodoitem;
-
-const StyledListItem = styled.li`
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 30px;
-`;
 
 const listItemCheckboxToggleCompleted = (
   todoItem,
@@ -70,6 +64,15 @@ const deleteSingleListItem = (index, todoList, setTodoList) => {
   setTodoList(currentTodoList);
 };
 
+const StyledListItem = styled.li`
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  justify-content: space-between;
+`;
+
 const StyledButton = styled.button`
   border: none;
   background-color: #0d98ba;
@@ -80,5 +83,10 @@ const StyledButton = styled.button`
   height: 50%;
   display: flex;
   align-items: center;
-  /* margin-left: 100%; */
+`;
+
+const StyledTextAndCheckbox = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
