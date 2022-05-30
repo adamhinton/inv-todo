@@ -6,7 +6,6 @@ import TodosContainer from "./components/TodosContainer";
 import { useEffect } from "react";
 
 function App() {
-  // later on, add localStorage fxnality and get this from localStorage (or empty array if none)
   const [todoList, setTodoList] = useState([]);
 
   useEffect(() => {

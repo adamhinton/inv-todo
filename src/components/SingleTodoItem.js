@@ -3,6 +3,7 @@ import { persistTodosToLocalStorage } from "../App";
 
 const SingleTodoitem = (props) => {
   const { completed, todoItem, setTodoList, todoList, index } = props;
+
   return (
     <StyledListItem>
       <StyledTextAndCheckbox>
@@ -38,6 +39,38 @@ const SingleTodoitem = (props) => {
 
 export default SingleTodoitem;
 
+const StyledListItem = styled.li`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 30px;
+`;
+
+const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  background-color: #0d98ba;
+  color: white;
+
+  font-size: 0.75rem;
+  height: 50%;
+`;
+
+const StyledTextAndCheckbox = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const StyledCheckbox = styled.input`
+  margin-right: 25px;
+`;
+
 const listItemCheckboxToggleCompleted = (
   todoItem,
   setTodoList,
@@ -65,34 +98,3 @@ const deleteSingleListItem = (index, todoList, setTodoList) => {
   setTodoList(currentTodoList);
   persistTodosToLocalStorage(currentTodoList);
 };
-
-const StyledListItem = styled.li`
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 30px;
-  justify-content: space-between;
-`;
-
-const StyledButton = styled.button`
-  border: none;
-  background-color: #0d98ba;
-  color: white;
-  border-radius: 10px;
-  padding: 14px 20px;
-  font-size: 0.75rem;
-  height: 50%;
-  display: flex;
-  align-items: center;
-`;
-
-const StyledTextAndCheckbox = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
-const StyledCheckbox = styled.input`
-  margin-right: 25px;
-`;
