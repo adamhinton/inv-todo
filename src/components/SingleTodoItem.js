@@ -1,3 +1,5 @@
+// GOAL: Add functionality to delete single item
+
 import styled from "styled-components";
 
 const SingleTodoitem = (props) => {
