@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { persistTodosToLocalStorage } from "../App";
 
 const Header = (props) => {
   const { setTodoList } = props;
@@ -9,6 +10,7 @@ const Header = (props) => {
       <StyledDeleteAllButton
         onClick={() => {
           setTodoList([]);
+          persistTodosToLocalStorage([]);
         }}
       >
         Delete All
