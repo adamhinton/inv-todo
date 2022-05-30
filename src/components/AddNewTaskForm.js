@@ -17,6 +17,7 @@ const AddNewTaskForm = (props) => {
           completed: false,
         };
 
+        // Don't want to let user submit empty task, this would probably be an accident
         taskDescription.length && setTodoList([...todoList, taskObject]);
         setTaskDescription("");
         persistTodosToLocalStorage([...todoList, taskObject]);
@@ -27,10 +28,10 @@ const AddNewTaskForm = (props) => {
         data-testid="add-new-task-input"
         value={taskDescription}
         type="text"
+        placeholder="Enter Task Description..."
         onChange={(e) => {
           setTaskDescription(e.target.value);
         }}
-        placeholder="Enter Task Description..."
       ></StyledInput>
       <StyledButton type="submit">+ Add Task</StyledButton>
     </StyledForm>
@@ -41,8 +42,8 @@ export default AddNewTaskForm;
 
 const StyledForm = styled.form`
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 const StyledLabel = styled.label`
@@ -67,9 +68,9 @@ const StyledInput = styled.input`
 
 const StyledButton = styled.button`
   border: none;
-  background-color: #0d98ba;
-  color: white;
   border-radius: 10px;
   padding: 12px 18px;
+  background-color: #0d98ba;
+  color: white;
   font-size: 0.75rem;
 `;
