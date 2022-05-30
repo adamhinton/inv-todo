@@ -23,13 +23,13 @@ const StyledHeader = styled.header`
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   margin-left: 5%;
   border-bottom: 1px solid lightgrey;
   margin-bottom: 3%;
-  align-items: center;
   max-width: 100%;
 
-  @media (max-width: 450px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     text-align: center;
   }
@@ -42,7 +42,7 @@ const Styledh1 = styled.h1`
     margin-right: 25%;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 700px) {
     width: 80%;
     margin: 0;
   }
