@@ -1,9 +1,4 @@
-# PLANNING
-
-## STRETCH GOALS:
-
-Add delete functionality \
-Store in localStorage
+# DOCUMENTATION
 
 ## COMPONENT STRUCTURE:
 
