@@ -11,7 +11,8 @@ const AddNewTaskForm = (props) => {
     <StyledForm
       onSubmit={(e) => {
         e.preventDefault();
-        const nextId = todoList.length + 1;
+
+        const nextId = todoList[todoList.length - 1]?.id + 1 || 1;
         const taskObject = {
           id: nextId,
           text: taskDescription,
