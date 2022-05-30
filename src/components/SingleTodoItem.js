@@ -43,10 +43,9 @@ const listItemCheckboxToggleCompleted = (
   completed
 ) => {
   let currentTodoList = [...todoList];
-
   let currentTodo = { ...todoList[todoItem.id - 1] };
-  currentTodo.completed = !completed;
 
+  currentTodo.completed = !completed;
   currentTodoList[todoItem.id - 1] = currentTodo;
 
   setTodoList(currentTodoList);
@@ -55,7 +54,9 @@ const listItemCheckboxToggleCompleted = (
 
 const deleteSingleListItem = (index, todoList, setTodoList) => {
   let currentTodoList = [...todoList];
+
   currentTodoList.splice(index, 1);
+
   setTodoList(currentTodoList);
   persistTodosToLocalStorage(currentTodoList);
 };
