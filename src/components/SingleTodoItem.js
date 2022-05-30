@@ -66,4 +66,4 @@ const listItemCheckboxToggleCompleted = (
   setTodoList(currentTodoList);
 };
 
-const deleteSingleListItem = () => {};
+const deleteSingleListItem = (setTodoList, todoList, index) => {};
