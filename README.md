@@ -15,14 +15,31 @@
 <App/>
 ```
 
+## MAJOR DEPENDENCIES:
+
+### STYLED COMPONENTS
+https://styled-components.com/docs/ \ 
+The concept here is very simple. Developers create a component for styling and wrap its CSS in backticks. You put it right in your component file. \
+EXAMPLE: \
+```
+const StyledLabel = styled.label`
+  width: 100%;
+  margin-bottom: 3%;
+  font-weight: bold;
+`;
+```
+
 ## COMPONENTS DOCUMENTATION
 
 ### App.js
+A standard React App component. Houses all other components in the app.
+
 
 #### APP STATE:
 
 [todoList, setTodoList] --- get from localStorage if I have time \
 each Todo is an object: {id: number, text: string, isCompleted: boolean} --- if todoList is empty, id = 1. If not, add 1 to the highest id in todoList
+
 
 ### Header.js
 
