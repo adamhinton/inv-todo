@@ -9,7 +9,7 @@ import styled from "styled-components";
 import { StyledButton } from "./AddNewTaskForm";
 
 const SingleTodoitem = (props) => {
-  const { completed, todoItem, setTodoList, todoList } = props;
+  const { completed, todoItem, setTodoList, todoList, index } = props;
   return (
     <StyledListItem>
       <input
@@ -65,3 +65,5 @@ const listItemCheckboxToggleCompleted = (
 
   setTodoList(currentTodoList);
 };
+
+const deleteSingleListItem = () => {};

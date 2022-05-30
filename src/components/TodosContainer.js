@@ -16,7 +16,7 @@ const TodosContainer = (props) => {
     <section>
       <Styledh2>{isCompleted ? "Completed" : "To-Do"}</Styledh2>
       <ul>
-        {todoList.map((item) => {
+        {todoList.map((item, index) => {
           return item.completed === isCompleted ? (
             <SingleTodoitem
               key={item.id}
@@ -24,6 +24,7 @@ const TodosContainer = (props) => {
               todoItem={item}
               setTodoList={setTodoList}
               todoList={todoList}
+              index={index}
             />
           ) : null;
         })}
