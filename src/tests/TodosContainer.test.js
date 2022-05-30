@@ -35,3 +35,11 @@ test("[4] TodosContainer isCompleted=true matches snapshot from 5.29.22", () => 
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test("[5] TodosContainer isCompleted=false matches snapshot from 5.29.22", () => {
+  const component = renderer.create(
+    <TodosContainer todoList={fakeTodoList} isCompleted={false} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});

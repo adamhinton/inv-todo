@@ -47,3 +47,14 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
   </ul>
 </section>
 `;
+
+exports[`[5] TodosContainer isCompleted=false matches snapshot from 5.29.22 1`] = `
+<section>
+  <h2
+    className="sc-gsnTZi cCbIxM"
+  >
+    To-Do
+  </h2>
+  <ul />
+</section>
+`;
