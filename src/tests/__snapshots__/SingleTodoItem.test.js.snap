@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] = `
+<li
+  className="sc-bczRLJ bMzBMl"
+  onClick={[Function]}
+>
+  <input
+    data-testid="todo-checkbox"
+    defaultChecked={true}
+    type="checkbox"
+  />
+  <h4>
+    Fake Todo Name Complete
+  </h4>
+</li>
+`;
+
+exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] = `
+<li
+  className="sc-bczRLJ bMzBMl"
+  onClick={[Function]}
+>
+  <input
+    data-testid="todo-checkbox"
+    defaultChecked={true}
+    type="checkbox"
+  />
+  <h4>
+    Fake Todo Name Incomplete
+  </h4>
+</li>
+`;

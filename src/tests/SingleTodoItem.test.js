@@ -33,3 +33,19 @@ test("[3] Todo item text and checkbox appear on screen", () => {
   expect(todoText).toBeVisible();
   expect(todoCheckbox).toBeVisible();
 });
+
+test("[4] SingleTodoItem completed = true matches snapshot from 5.29.22", () => {
+  const component = renderer.create(
+    <SingleTodoitem completed={true} todoItem={fakeTodoItemComplete} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test("[5] SingleTodoItem completed = false matches snapshot from 5.29.22", () => {
+  const component = renderer.create(
+    <SingleTodoitem completed={true} todoItem={fakeTodoItemIncomplete} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
