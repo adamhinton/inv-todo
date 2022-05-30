@@ -5,7 +5,6 @@ import renderer from "react-test-renderer";
 const fakeTodoList = [
   {
     text: "Task one",
-    id: 1,
     completed: true,
   },
 ];
