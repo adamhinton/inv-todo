@@ -2,7 +2,7 @@
 
 exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-bczRLJ bMzBMl"
+  className="sc-eCYdqJ hJzPOU"
   onClick={[Function]}
 >
   <input
@@ -13,12 +13,17 @@ exports[`[4] SingleTodoItem completed = true matches snapshot from 5.29.22 1`] =
   <h4>
     Fake Todo Name Complete
   </h4>
+  <button
+    className="sc-hKMtZM fLGsmg"
+  >
+    Delete
+  </button>
 </li>
 `;
 
 exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] = `
 <li
-  className="sc-bczRLJ bMzBMl"
+  className="sc-eCYdqJ hJzPOU"
   onClick={[Function]}
 >
   <input
@@ -29,5 +34,10 @@ exports[`[5] SingleTodoItem completed = false matches snapshot from 5.29.22 1`] 
   <h4>
     Fake Todo Name Incomplete
   </h4>
+  <button
+    className="sc-hKMtZM fLGsmg"
+  >
+    Delete
+  </button>
 </li>
 `;

@@ -3,13 +3,13 @@
 exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] = `
 <section>
   <h2
-    className="sc-gsnTZi cCbIxM"
+    className="sc-jSMfEi fvoYXD"
   >
     Completed
   </h2>
   <ul>
     <li
-      className="sc-bczRLJ bMzBMl"
+      className="sc-eCYdqJ hJzPOU"
       onClick={[Function]}
     >
       <input
@@ -20,6 +20,11 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
       <h4>
         Task one
       </h4>
+      <button
+        className="sc-hKMtZM fLGsmg"
+      >
+        Delete
+      </button>
     </li>
   </ul>
 </section>
@@ -28,7 +33,7 @@ exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] =
 exports[`[5] TodosContainer isCompleted=false matches snapshot from 5.29.22 1`] = `
 <section>
   <h2
-    className="sc-gsnTZi cCbIxM"
+    className="sc-jSMfEi fvoYXD"
   >
     To-Do
   </h2>
