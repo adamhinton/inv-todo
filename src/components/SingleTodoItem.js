@@ -30,7 +30,7 @@ const SingleTodoitem = (props) => {
 
       <StyledButton
         onClick={() => {
-          console.log("jvdiasofjasdi");
+          deleteSingleListItem(index, todoList, setTodoList);
         }}
       >
         Delete
@@ -66,4 +66,8 @@ const listItemCheckboxToggleCompleted = (
   setTodoList(currentTodoList);
 };
 
-const deleteSingleListItem = (setTodoList, todoList, index) => {};
+const deleteSingleListItem = (index, todoList, setTodoList) => {
+  let currentTodoList = [...todoList];
+  currentTodoList.splice(index, 1);
+  setTodoList(currentTodoList);
+};
