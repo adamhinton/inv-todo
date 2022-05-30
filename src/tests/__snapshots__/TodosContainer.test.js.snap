@@ -1,29 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[4] TodosContainer Matches snapshot from 5.29.22 1`] = `
-<section>
-  <h2
-    className="sc-gsnTZi cCbIxM"
-  >
-    Completed
-  </h2>
-  <ul>
-    <li
-      className="sc-bczRLJ bMzBMl"
-      onClick={[Function]}
-    >
-      <input
-        defaultChecked={true}
-        type="checkbox"
-      />
-      <h4>
-        Task one
-      </h4>
-    </li>
-  </ul>
-</section>
-`;
-
 exports[`[4] TodosContainer isCompleted=true matches snapshot from 5.29.22 1`] = `
 <section>
   <h2
