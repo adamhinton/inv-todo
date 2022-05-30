@@ -77,4 +77,8 @@ const StyledButton = styled.button`
   border-radius: 10px;
   padding: 2% 3%;
   font-size: 0.75rem;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  /* margin-left: 100%; */
 `;
