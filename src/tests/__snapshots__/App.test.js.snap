@@ -8,7 +8,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
     className="container"
   >
     <header
-      className="sc-bczRLJ gSWtie"
+      className="sc-bczRLJ crdXbW"
     >
       <h1
         className="sc-gsnTZi gWWeNP"
@@ -16,7 +16,7 @@ exports[`[2] Matches snapshot from 5.29.22 1`] = `
         Inventora Tasks
       </h1>
       <button
-        className="sc-dkzDqf fokCQY"
+        className="sc-dkzDqf bexeyA"
         onClick={[Function]}
       >
         Delete All
