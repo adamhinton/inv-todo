@@ -19,7 +19,6 @@ const AddNewTaskForm = (props) => {
         };
 
         setTodoList([...todoList, taskObject]);
-        console.log("new todoList:", todoList);
         setTaskDescription("");
         persistTodosToLocalStorage([...todoList, taskObject]);
       }}

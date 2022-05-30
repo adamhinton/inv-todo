@@ -13,7 +13,6 @@ function App() {
     const key = "todos";
 
     const persistedTodos = JSON.parse(window.localStorage.getItem(key)) || [];
-    console.log("persistedTodos:", persistedTodos);
     setTodoList(persistedTodos);
   }, []);
 
@@ -60,10 +59,4 @@ const StyledMain = styled.main`
 export const persistTodosToLocalStorage = (todoList) => {
   const key = "todos";
   window.localStorage.setItem(key, JSON.stringify(todoList));
-  // console.log("todoList:", todoList);
-
-  // console.log(
-  //   'window.localStorage.getItem("todos"):',
-  //   window.localStorage.getItem("todos")
-  // );
 };
