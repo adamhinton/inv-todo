@@ -25,7 +25,10 @@ const SingleTodoitem = (props) => {
         data-testid="todo-checkbox"
         defaultChecked={completed}
       ></input>
+
       <h4>{todoItem.text}</h4>
+
+      <button>Delete</button>
     </StyledListItem>
   );
 };
